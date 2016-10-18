@@ -1,0 +1,50 @@
+<html>
+	<head>
+	<title>Favorites list</title>
+	<style type="text/css">
+	body{
+	     counter-reset: fav;
+		 
+	}
+	h2{
+		 counter-reset: subfav;
+		 color: red;
+		 text-align: center;
+	}
+	h2::before {
+		 counter-increment: fav;
+		 content: "fav " counter(fav) ".";
+		 text-align: center;
+	}
+	
+    p::before{
+		 counter-increment: subfav;
+		 content: counter(fav) "." counter(subfav) " ";
+		 }
+	p{
+		text-align: center;
+	}
+	h3{
+		text-align: center;
+	}
+	</style>
+	</head>
+	<body>
+		<h2>Favourite colors</h2>
+		<p>Red</p>
+		<p>Blue</p>
+		
+		<h2>Favourite Games</h2>
+		<p>Cricket</p>
+		<p>Table Tennis</p>
+		
+		<h2>Favourite places</h2>
+		<p>Niagara Falls</p>
+		<p>Jammu&Kashmir</p>
+		
+		<h3><a  href="file:///C:/Users/vihar/Desktop/code/intro.html" target="">Return</a></h3>
+	</body>
+	
+</html>
+ 
+		
